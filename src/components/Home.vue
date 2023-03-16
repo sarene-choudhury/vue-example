@@ -31,6 +31,22 @@ export default {
                 {
                     src: "https://images.squarespace-cdn.com/content/v1/5dd8630d09ab5908e35b35a0/1593362109648-FYSE9T1HR5KEPVE7O9MN/nacho+dog.jpg?format=1000w",
                     hotdog: "nachos"
+                },
+                {
+                    src: /assets/beautiful.png,
+                    hotdog: "beautiful"
+                },
+                {
+                    src: /assets/patriotic.png,
+                    hotdog: "patriotic"
+                },
+                {
+                    src: /assets/winner.png,
+                    hotdog: "winner"
+                },
+                {
+                    src: /assets/vintage.png,
+                    hotdog: "vintage"
                 }
             ];
             const res = otherDogs.find(h => h.hotdog == this.hotdog);
@@ -81,6 +97,19 @@ export default {
             <a v-on:click="e => changeData(otherDogs[6])">
                 Put some {{ otherDogs[6].hotdog }} on it
             </a>
+            <a v-on:click="e => changeData(otherDogs[6])">
+                Put some {{ otherDogs[7].hotdog }} on it
+            </a>
+            <a v-on:click="e => changeData(otherDogs[6])">
+                Put some {{ otherDogs[8].hotdog }} on it
+            </a>
+            <a v-on:click="e => changeData(otherDogs[6])">
+                Put some {{ otherDogs[9].hotdog }} on it
+            </a>
+            <a v-on:click="e => changeData(otherDogs[6])">
+                Put some {{ otherDogs[10].hotdog }} on it
+            </a>
+
 
         </div>
     </body>

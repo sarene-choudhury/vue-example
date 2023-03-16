@@ -30,6 +30,10 @@ export default {
             <NavItem>
                 <a href="/statistics.html" rel="noopener">Statistics</a>
             </NavItem>
+
+            <NavItem>
+                <a href="/cart.html" rel="noopener">Cart</a>
+            </NavItem>
         </main>
         <div class="end">
 

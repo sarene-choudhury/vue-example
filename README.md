@@ -27,3 +27,6 @@ npm run dev
 ```sh
 npm run build
 ```
+
+# Food for thought:
+Splitting the page improves performance/efficiency, but also requires more coding to achieve this so others may not care enough about the small performance improvement in light of the extra work required to achieve that. 

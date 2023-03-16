@@ -20,6 +20,9 @@ export default {
     <NavBar></NavBar>
 
   </header>
+  <body>
+    This website is about hotdogs
+  </body>
   This is the testimonials page.
 </template>
 
