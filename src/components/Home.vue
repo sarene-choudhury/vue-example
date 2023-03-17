@@ -33,19 +33,19 @@ export default {
                     hotdog: "nachos"
                 },
                 {
-                    src: /assets/beautiful.png,
+                    src: "/assets/beautiful.png",
                     hotdog: "beautiful"
                 },
                 {
-                    src: /assets/patriotic.png,
+                    src: "/assets/patriotic.png",
                     hotdog: "patriotic"
                 },
                 {
-                    src: /assets/winner.png,
+                    src: "./assets/winner.png",
                     hotdog: "winner"
                 },
                 {
-                    src: /assets/vintage.png,
+                    src: "../assets/vintage.png",
                     hotdog: "vintage"
                 }
             ];
@@ -97,16 +97,16 @@ export default {
             <a v-on:click="e => changeData(otherDogs[6])">
                 Put some {{ otherDogs[6].hotdog }} on it
             </a>
-            <a v-on:click="e => changeData(otherDogs[6])">
+            <a v-on:click="e => changeData(otherDogs[7])">
                 Put some {{ otherDogs[7].hotdog }} on it
             </a>
-            <a v-on:click="e => changeData(otherDogs[6])">
+            <a v-on:click="e => changeData(otherDogs[8])">
                 Put some {{ otherDogs[8].hotdog }} on it
             </a>
-            <a v-on:click="e => changeData(otherDogs[6])">
+            <a v-on:click="e => changeData(otherDogs[9])">
                 Put some {{ otherDogs[9].hotdog }} on it
             </a>
-            <a v-on:click="e => changeData(otherDogs[6])">
+            <a v-on:click="e => changeData(otherDogs[10])">
                 Put some {{ otherDogs[10].hotdog }} on it
             </a>
 
