@@ -1,5 +1,9 @@
 <script>
 import NavBar from './NavBar.vue'
+import beautiful from '../assets/beautiful.png' 
+import vintage from '../assets/vintage.png' 
+import winner from '../assets/winner.png' 
+import patriotic from '../assets/patriotic.png' 
 
 export default {
     data() {
@@ -33,19 +37,19 @@ export default {
                     hotdog: "nachos"
                 },
                 {
-                    src: "/assets/beautiful.png",
+                    src: beautiful,
                     hotdog: "beautiful"
                 },
                 {
-                    src: "/assets/patriotic.png",
+                    src: patriotic,
                     hotdog: "patriotic"
                 },
                 {
-                    src: "./assets/winner.png",
+                    src: winner,
                     hotdog: "winner"
                 },
                 {
-                    src: "../assets/vintage.png",
+                    src: vintage,
                     hotdog: "vintage"
                 }
             ];
