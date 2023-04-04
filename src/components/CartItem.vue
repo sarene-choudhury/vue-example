@@ -1,7 +1,4 @@
 <script>
-import NavBar from './NavBar.vue'
-
-
 export default{
     props: [
         "image",
@@ -17,12 +14,6 @@ export default{
 
 </script>
 <template>
-    <body>
-        <NavBar></NavBar>
-        <img :src="src" alt="hotdog">
-        <div class="links">
-        </div>
-    </body>
     <div class="item">
         <h1>image: {{ image }}</h1>
         <h2>productName: {{ productName }}</h2>
