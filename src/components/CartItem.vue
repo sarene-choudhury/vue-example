@@ -1,4 +1,9 @@
 <script>
+import beautiful from '../assets/beautiful.png' 
+import vintage from '../assets/vintage.png' 
+import winner from '../assets/winner.png' 
+import patriotic from '../assets/patriotic.png' 
+
 export default{
     props: [
         "image",
@@ -7,18 +12,31 @@ export default{
         "price",
     ],
     methods: {
-        addItemToCart(productName) 
-        {this.$emit('addItemToCart', productName)}
-    },
+        addItemToCart(productName) {this.$emit('addItemToCart', productName)}
+    }, 
 }
 
 </script>
 <template>
     <div class="item">
-        <h1>image: {{ image }}</h1>
+        <img :src="image" alt="hotdog">
         <h2>productName: {{ productName }}</h2>
-        <h3>description: {{ description }}</h3>
-        <h4>price: {{ price }}</h4>
-        <button @click="addItemToCart(productName)"></button>
+        <h2>description: {{ description }}</h2>
+        <h2>price: {{ price }}</h2>
+        <button @click="addItemToCart(productName)">Add Item to Cart</button>
     </div>
 </template>
+
+
+<style scoped>
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.links {
+    display: flex;
+    justify-content: space-evenly;
+}
+</style>

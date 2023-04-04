@@ -1,5 +1,6 @@
 <script>
 import NavBar from './NavBar.vue'
+
 // Should inherit from app. 
 export default {
     data() {

@@ -1,6 +1,6 @@
 <script>
 import NavBar from './NavBar.vue'
-import CartItem from '.CartItem.vue'
+import CartItem from './CartItem.vue'
 
 
 export default {
@@ -27,7 +27,7 @@ export default {
                 description = "A hotdog dressed up in vintage clothing"
                 price = "2,000,000"
 
-                @add-to-cart="$event => itemCount++"
+                @addItemToCart="$event => itemCount++"
         />
         <CartItem
                 image = '../assets/patriotic.png' 
@@ -35,7 +35,7 @@ export default {
                 description = "A hotdog patriotic enough for the fourth of july"
                 price = "10,000,000"
 
-                @add-to-cart="$event => itemCount++"
+                @addItemToCart-="$event => itemCount++"
         />
         <CartItem
                 image = '../assets/beautiful.png' 
@@ -43,7 +43,7 @@ export default {
                 description = "A hotdog all glammed up"
                 price = "1,000,000"
 
-                @add-to-cart="$event => itemCount++"
+                @addItemToCart="$event => itemCount++"
         />
         <CartItem
                 image = '../assets/winner.png' 
@@ -51,10 +51,23 @@ export default {
                 description = "A hotdog who has beaten Michael Phelps and is proud of it"
                 price = "700,000,000"
 
-                @add-to-cart="$event => itemCount++"
+                @addItemToCart="$event => itemCount++"
         />
 
     </body>
     The amount of hotdogs in your cart totals to {{ itemCount }}
     
 </template>
+
+<style scoped>
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.links {
+    display: flex;
+    justify-content: space-evenly;
+}
+</style>
